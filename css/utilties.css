@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@800&display=swap');
+
+.font-bitter{
+    font-family: "Bitter",sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+.flex  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+.inline-flex {
+      display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-p{
+    padding: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,254 @@
+* {
+  list-style: none;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+}
+
+.navbar {
+  height: 40px;
+  background-color: rgb(14, 14, 58);
+  color: white;
+  padding-top: 20px;
+}
+
+.plural-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar img,
+.navbar-two img {
+  width: 100px;
+}
+.navbar ul {
+  display: inline-flex;
+}
+.navbar ul li {
+  margin-right: 30px;
+}
+
+.navbar ul li:hover {
+  cursor: pointer;
+  border-bottom: 3px solid tomato;
+ 
+}
+
+.navbar-two {
+  height: 70px;
+  background-color: rgb(25, 25, 70);
+  color: white;
+}
+
+.skills-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.skills-head .list ul {
+  display: inline-flex;
+}
+
+.skills-head .list ul li {
+  margin-right: 10px;
+}
+
+.skills-head .buttons ul li {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.contact-btn {
+  width: 130px;
+  background-color: rgb(25, 25, 70);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 3px solid rgb(88, 88, 146);
+}
+
+.contact-btn:hover {
+  background-color: rgb(69, 69, 141);
+  cursor: pointer;
+  transition: 700ms background-color;
+}
+
+.free-btn {
+  width: 130px;
+  background-color: rgb(197, 53, 53);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+.free-btn:hover {
+  background-color: rgb(207, 65, 65);
+  cursor: pointer;
+  transition: 700ms background-color;
+}
+
+.where-teams {
+  background-image: linear-gradient(to right, rgb(56, 2, 107), rgb(25, 25, 70));
+  padding: 100px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(25, 25, 70);
+  padding: 20px 20px;
+  border-radius: 40px;
+}
+
+.card-text {
+  padding: 50px;
+  color: white;
+}
+
+.card-text h4,
+h1,
+p {
+  padding: 20px;
+}
+
+.card-text h4 {
+  color: rgb(207, 49, 22);
+}
+
+.card-text h1 {
+  font-size: 40px;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+}
+.card-btn span,
+button {
+  margin-left: 20px;
+}
+
+.hero img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.popular {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  padding: 50px;
+}
+.popular .topics {
+  padding: 10px;
+}
+.topics a{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.languages-div {
+  display: inline-flex;
+}
+
+.languages .languages-div div {
+  margin-right: 40px;
+  border-radius: 10px;
+  transition: 1000ms bottom;
+}
+
+.languages .languages-div div:hover {
+  position: relative;
+  bottom: 22px;
+}
+
+.small-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.play-card ,
+.million-card,
+.customers-card,
+.percent-card {
+   width: 260px;
+   height: 150px;
+   background-color: white;
+   padding: 20px;
+   border-radius: 20px;
+}
+
+.play-card img,
+.million-card img,
+.customers-card img,
+.percent-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.play-card p,
+.million-card p,
+.customers-card p,
+.percent-card p {
+font-size: 25px;
+}
+
+.section-brands {
+  padding: 50px 50px;
+}
+
+.section-brands h3 {
+  text-align: center;
+}
+.brands {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.brands img {
+  height: 40px;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+
+
+.upskill {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.upskill-left h1 {
+  font-size:40px ;
+}
+
+.learn-btn{
+  background-color: white;
+  border-radius: 20px;
+  width: 150px;
+  border: 1px solid black;
+
+}
+
+
+.upskill img {
+  width: 90%;
+}
+
+.upskill-btn {
+  display: flex;
+}
+
+.upskill-left  a{
+  color: tomato;
+   margin-left: 20px;
+}
