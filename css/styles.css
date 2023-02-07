@@ -435,12 +435,20 @@ button {
   color: var(--tomato);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .navbar {
     display: none;
   }
   .navbar-two {
     height: 100px;
+    font-size: xx-small;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .list ul li {
+    margin-right: 1px;
   }
   .skills-head {
     display: grid;
@@ -451,6 +459,9 @@ button {
   .buttons {
     display: flex;
     justify-content: center;
+  }
+  .card {
+    width: 100%;
   }
 
   .contact-btn {
