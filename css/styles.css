@@ -8,6 +8,10 @@
   --tomato: #ff5733;
 }
 
+.fix-header {
+  position: fixed;
+  width: 100%;
+}
 .navbar {
   height: 40px;
   background-color: rgb(14, 14, 58);
@@ -104,7 +108,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: rgb(25, 25, 70);
-
   border-radius: 40px;
   width: 100%;
 }
@@ -128,7 +131,6 @@ p {
   font-size: 40px;
 }
 
-
 .card-btn {
   display: flex;
   align-items: center;
@@ -139,7 +141,7 @@ button {
 }
 
 .hero img {
-  width: 80%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -159,13 +161,14 @@ button {
 }
 
 .languages-div {
-  display: inline-flex;
+  display: flex;
 }
 
 .languages .languages-div div {
   margin-right: 40px;
   border-radius: 10px;
   transition: 1000s bottom;
+  display: inline;
 }
 
 .languages .languages-div div:hover {
@@ -178,6 +181,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+
 }
 
 .play-card,
@@ -209,11 +213,10 @@ button {
 
 .brands img {
   height: 40px;
-  padding: 20px 20px;
   margin-top: 20px;
 }
 .brands {
-  display: grid;
+  display: inline-flex;
   grid-template-columns: repeat(5, 1fr);
 }
 .upskill {
@@ -436,26 +439,29 @@ button {
   color: var(--tomato);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .navbar {
-    display: none;
+    font-size: x-small;
   }
   .navbar-two {
     height: 100px;
-   
   }
-.plural-head {
-  display: flex;
-}
+  .plural-head {
+    display: flex;
+  }
 
-.list {
-  display: inline-flex; 
-  align-items: center;
+  .list {
+    display: inline-flex;
+    align-items: center;
+  }
 
-}
+  .buttons {
+    display: flex;
+    justify-content: end;
+  }
   .list ul li {
-    margin-right: 0px; 
-     font-size: 7px;;
+    margin-right: 0px;
+    font-size: 9px;
   }
   .skills-head {
     display: inline-block;
@@ -463,17 +469,15 @@ button {
 
   .where-teams {
     padding: 0;
+    padding-top: 10rem;
   }
 
   .card {
-    width: 100%;
+    border-radius: 0;
   }
   .card-text h1 {
-  font-size: 20px;
-}
-.card-text p {
-  font-size: 10px;
-}
+    font-size: 20px;
+  }
 
   .contact-btn {
     width: 70px;
@@ -483,32 +487,43 @@ button {
     width: 70px;
     font-size: x-small;
   }
+
   .languages-div {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .brands {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+  .languages-div div {
+    margin-top: 30px;
   }
+
+  .popular {
+    padding: 10px;
+  }
+
   .brands img {
-  height: 20px;
+    height: 20px;
   }
 
   #order-skill {
     order: 1;
   }
+  .small-cards {
+padding: 12px 0px 42px 72px ;
+  }
 
   .card,
   .popular,
-  .small-cards,
   .customers,
   .skill-case,
   .upskill,
-  .percentages,.code-course,.platform-cards {
+  .percentages,
+  .small-cards,
+  .code-course,
+  .platform-cards {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .code-course {
     padding: 20px;
   }
@@ -518,7 +533,7 @@ button {
   .experience-list {
     width: 100%;
   }
-  .free-courses{
+  .free-courses {
     display: block;
   }
   .free-courses a {
