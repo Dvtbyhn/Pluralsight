@@ -128,6 +128,7 @@ p {
   font-size: 40px;
 }
 
+
 .card-btn {
   display: flex;
   align-items: center;
@@ -441,28 +442,38 @@ button {
   }
   .navbar-two {
     height: 100px;
-    font-size: xx-small;
+   
   }
-  .list {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
+.plural-head {
+  display: flex;
+}
+
+.list {
+  display: inline-flex; 
+  align-items: center;
+
+}
   .list ul li {
-    margin-right: 1px;
+    margin-right: 0px; 
+     font-size: 7px;;
   }
   .skills-head {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: inline-block;
   }
 
-  .buttons {
-    display: flex;
-    justify-content: center;
+  .where-teams {
+    padding: 0;
   }
+
   .card {
     width: 100%;
   }
+  .card-text h1 {
+  font-size: 20px;
+}
+.card-text p {
+  font-size: 10px;
+}
 
   .contact-btn {
     width: 70px;
@@ -480,6 +491,9 @@ button {
   .brands {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+  }
+  .brands img {
+  height: 20px;
   }
 
   #order-skill {
