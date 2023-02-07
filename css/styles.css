@@ -82,7 +82,7 @@
 
 .free-btn {
   width: 130px;
-  background-color: rgb(197, 53, 53);
+  background-color: rgb(221, 69, 69);
   padding: 10px;
   border-radius: 20px;
   border: none;
@@ -104,8 +104,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: rgb(25, 25, 70);
-  padding: 20px 20px;
+
   border-radius: 40px;
+  width: 100%;
 }
 
 .card-text {
@@ -120,7 +121,7 @@ p {
 }
 
 .card-text h4 {
-  color: rgb(207, 49, 22);
+  color: rgb(248, 98, 123);
 }
 
 .card-text h1 {
@@ -137,8 +138,8 @@ button {
 }
 
 .hero img {
-  width: 600px;
-  height: 400px;
+  width: 80%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -204,16 +205,16 @@ button {
 .section-brands h3 {
   text-align: center;
 }
-.brands {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
+
 .brands img {
   height: 40px;
   padding: 20px 20px;
   margin-top: 20px;
 }
-
+.brands {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
 .upskill {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -280,6 +281,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 7rem;
+  gap: 100px;
 }
 .stories a,
 .fujitsu-card a,
@@ -307,7 +309,7 @@ button {
 .stories,
 .fujitsu-card,
 .maritz-card {
-  width: 250px;
+  width: 80%;
   padding: 40px;
   border-radius: 20px;
 }
@@ -390,9 +392,111 @@ button {
 }
 
 .free-courses a:hover {
-}
-
-.free-courses a:hover {
   margin-right: 10px;
   transition: 1s all;
+}
+
+.platform-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.orange-card,
+.green-card,
+.purple-card {
+  background-color: var(--white-color);
+  color: black;
+  padding: 13px 0px 10px 20px;
+  border-radius: 20px;
+}
+.orange-card h4,
+.green-card h4,
+.purple-card h4,
+.orange-card div,
+.green-card div,
+.purple-card div,
+.orange-card span,
+.green-card span,
+.purple-card span {
+  padding-top: 20px;
+  font-size: 19px;
+}
+
+.platform-cards span {
+  display: inline-flex;
+}
+
+.platform-cards img {
+  width: 95%;
+}
+
+.platform-cards span {
+  color: var(--tomato);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-two {
+    height: 100px;
+  }
+  .skills-head {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-btn {
+    width: 70px;
+    font-size: x-small;
+  }
+  .free-btn {
+    width: 70px;
+    font-size: x-small;
+  }
+  .languages-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brands {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  #order-skill {
+    order: 1;
+  }
+
+  .card,
+  .popular,
+  .small-cards,
+  .customers,
+  .skill-case,
+  .upskill,
+  .percentages,.code-course,.platform-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .code-course {
+    padding: 20px;
+  }
+  .exp-img {
+    margin-left: 50px;
+  }
+  .experience-list {
+    width: 100%;
+  }
+  .free-courses{
+    display: block;
+  }
+  .free-courses a {
+    margin-left: 20px;
+  }
 }
