@@ -26,6 +26,7 @@
   align-items: center;
 }
 
+
 .list-p{
     padding: 10px;
 }
@@ -34,4 +35,22 @@
     cursor: pointer;
 }
 
+.card-element p {
+  font-size: 30px;
+  color: blue;
+}
+
+
+.p-font{
+    font-family: sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
 
