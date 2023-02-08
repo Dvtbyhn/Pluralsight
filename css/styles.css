@@ -576,40 +576,33 @@ button {
   }
 
   .navbar ul li {
-    
     margin-right: 5px;
   }
   .navbar-two {
     height: 100px;
   }
+ 
   .plural-head {
-    display: flex;
+    justify-content: center;
   }
 
-  .list {
-    display: inline-flex;
-    align-items: center;
-  }
-  .list img {
-    position: relative;
-    left: -16px;
-  }
+ 
 
-  .skills-head .list ul li ,.buttons {
+ 
+
+  .skills-head .list ul li  {
     font-size: 6px;
     margin-right: 12px;
   }
-
-  .buttons {
-    display: flex;
-    justify-content: end;
+  .buttons{
+    display: none;
   }
   .list ul li {
     margin-right: 0px;
     font-size: 9px;
   }
   .skills-head {
-    display: inline-block;
+  justify-content: center;
   }
 
   .where-teams {
