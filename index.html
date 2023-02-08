@@ -299,7 +299,6 @@
                             </li>
                             <li>
                                 <a class="pointer"> Skill assessments <i class="fa-solid fa-chevron-right"></i></a>
-
                             </li>
                             <li>
                                 <a class="pointer"> Learning paths <i class="fa-solid fa-chevron-right"></i></a>
@@ -350,9 +349,7 @@
             </div>
             <div class="free-courses">
                 <h1 class="font-bitter">Try for free</h1>
-                <a class="pointer font-bitter">
-                    View free courses
-                </a>
+                <a class="pointer font-bitter">View free courses </a>
             </div>
         </div>
         <div class="platform-cards container">
@@ -388,6 +385,141 @@
             </div>
         </div>
     </section>
+
+    <section class="our-solutions">
+        <div class="coll-solutions container">
+            <div>
+                <div>
+                    <h1 class="font-bitter">Our solutions</h1>
+                    <h1 class="font-bitter">Face the future with confidence</h1>
+                    <p>And with the skills and engineering insights to thrive. Our solutions enable tech teams to
+                        navigate digital trends and
+                        customer needs that continue to shift at lightning speed. Implement one (or more) and you’ll
+                        transform your technology
+                        workforce—one developer, one delivery, one success at a time.</p>
+                    <a class="pointer font-bitter">Learn more </a>
+                </div>
+                <div class="coll-solutions">
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Cloud transformation</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Overcome complex cloud challenges, build top cloud talent from within, become cloud native,
+                            and
+                            connect cloud skill
+                            development and certifications to your objectives.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Tech fluency</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Remove knowledge barriers, increase collaboration, and accelerate every touchpoint to
+                            technology
+                            with an all-new
+                            end-to-end tech fluency solution.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Engineering onboarding</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Get new engineering hires to full productivity—and contributing to your business
+                            results—faster
+                            and without bogging down
+                            the team.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Software delivery</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Empower software delivery teams to ship reliable, scalable, secure code on time by ensuring
+                            teams work together
+                            effectively and have the right data-driven insights and skills.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Agile transformation</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Get real insight into how your Agile journey is progressing and how you can empower your
+                            development team to
+                            continuously improve.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Talent mobility</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Create your own internal talent pipeline with analytics on employee proficiency—by role and
+                            skill—and reports that
+                            highlight impact and efficiency.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Distributed & remote teams</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Mitigate burnout and reduce cycle times with the visibility and tools to develop skills and
+                            fix
+                            workflow gaps for
+                            distributed teams.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Opportunity Academies</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Access an academy tailored to your unique circumstances. Source and develop the talent you
+                            need
+                            and benefit from the
+                            breadth of experience diversity brings.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+                    <div class="col-btn pointer">
+                        <button type="button" class="collapsible font-bitter">Upskilling & reskilling</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="content">
+                        <p>Build outcome-oriented skill development programs that prepare teams for your
+                            mission-critical
+                            projects and build your
+                            reputation as an employer of choice.</p>
+                        <a class="pointer font-bitter">Learn more </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var coll = document.getElementsByClassName("col-btn");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

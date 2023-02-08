@@ -385,7 +385,7 @@ button {
   align-items: center;
   margin-top: 40px;
 }
-.free-courses a {
+.free-courses a ,.our-solutions a {
   color: rgb(253, 74, 134);
 }
 
@@ -440,6 +440,60 @@ button {
 
 .platform-cards span {
   color: var(--tomato);
+}
+
+.our-solutions{
+  background-color:rgb(14, 14, 58) ;
+  color: var(--white-color);
+}
+
+.our-solutions button {
+  font-size: 20px;
+}
+.collapsible {
+  background-color:rgb(14, 14, 58) ;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-bottom:1px solid rgb(177, 173, 173);
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+
+.coll-solutions{
+  padding-top: 3rem;
+}
+.coll-solutions a {
+  position: relative;
+  left: 20px;
+}
+
+.col-btn {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+
+
+.col-btn i {
+  position: relative;
+  top: 35px;
+  right: 20px;
 }
 
 @media (max-width: 576px) {
