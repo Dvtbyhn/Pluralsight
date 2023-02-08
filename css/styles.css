@@ -62,7 +62,7 @@
 }
 
 .skills-head .list ul li {
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .skills-head .buttons ul li {
@@ -181,7 +181,6 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-
 }
 
 .play-card,
@@ -443,6 +442,10 @@ button {
   .navbar {
     font-size: x-small;
   }
+
+  .navbar ul li {
+    font-size: x-small;
+  }
   .navbar-two {
     height: 100px;
   }
@@ -454,6 +457,10 @@ button {
     display: inline-flex;
     align-items: center;
   }
+
+  .skills-head .list ul li {
+  margin-right: 9px;
+}
 
   .buttons {
     display: flex;
@@ -509,7 +516,7 @@ button {
     order: 1;
   }
   .small-cards {
-padding: 12px 0px 42px 72px ;
+    padding: 12px 0px 42px 42px;
   }
 
   .card,
