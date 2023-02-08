@@ -576,7 +576,7 @@ button {
   }
 
   .navbar ul li {
-    font-size: x-small;
+    
     margin-right: 5px;
   }
   .navbar-two {
@@ -590,9 +590,14 @@ button {
     display: inline-flex;
     align-items: center;
   }
+  .list img {
+    position: relative;
+    left: -16px;
+  }
 
-  .skills-head .list ul li {
-    margin-right: 9px;
+  .skills-head .list ul li ,.buttons {
+    font-size: 6px;
+    margin-right: 12px;
   }
 
   .buttons {
@@ -705,4 +710,5 @@ button {
     width: 250px;
 
   }
+
 }
