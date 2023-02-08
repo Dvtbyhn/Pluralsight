@@ -439,7 +439,7 @@ button {
   color: var(--tomato);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .navbar {
     font-size: x-small;
   }
