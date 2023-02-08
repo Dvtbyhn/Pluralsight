@@ -447,8 +447,13 @@ button {
     font-size: x-small;
   }
 
+  .navbar ul{
+    justify-content: start;
+  }
+
   .navbar ul li {
     font-size: x-small;
+    margin-right: 5px;
   }
   .navbar-two {
     height: 100px;
