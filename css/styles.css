@@ -8,6 +8,7 @@
   --tomato: #ff5733;
 }
 
+
 .fix-header {
   position: fixed;
   width: 100%;
@@ -168,8 +169,8 @@ button {
 .languages .languages-div div {
   margin-right: 40px;
   border-radius: 10px;
-  transition: 1000s bottom;
-  display: inline;
+  max-width: 80px;
+  
 }
 
 .languages .languages-div div:hover {
@@ -631,7 +632,7 @@ button {
 
   .languages-div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .languages-div div {
