@@ -11,6 +11,7 @@
 .fix-header {
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 .navbar {
   height: 40px;
@@ -385,7 +386,8 @@ button {
   align-items: center;
   margin-top: 40px;
 }
-.free-courses a ,.our-solutions a {
+.free-courses a,
+.our-solutions a {
   color: rgb(253, 74, 134);
 }
 
@@ -427,7 +429,7 @@ button {
   font-size: 19px;
 }
 .fa-chart-simple {
- margin-left: 20px;
+  margin-left: 20px;
 }
 
 .platform-cards span {
@@ -442,8 +444,8 @@ button {
   color: var(--tomato);
 }
 
-.our-solutions{
-  background-color:rgb(14, 14, 58) ;
+.our-solutions {
+  background-color: rgb(14, 14, 58);
   color: var(--white-color);
 }
 
@@ -451,13 +453,13 @@ button {
   font-size: 20px;
 }
 .collapsible {
-  background-color:rgb(14, 14, 58) ;
+  background-color: rgb(14, 14, 58);
   color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  border-bottom:1px solid rgb(177, 173, 173);
+  border-bottom: 1px solid rgb(177, 173, 173);
   text-align: left;
   outline: none;
   font-size: 15px;
@@ -473,27 +475,96 @@ button {
   font-size: 18px;
 }
 
-
-.coll-solutions{
+.coll-solutions {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
+.solution a,
 .coll-solutions a {
   position: relative;
   left: 20px;
+
 }
 
 .col-btn {
   display: flex;
   justify-content: space-evenly;
-  
 }
-
-
 
 .col-btn i {
   position: relative;
   top: 35px;
   right: 20px;
+  
+}
+
+.plans-pricing {
+  background-image: linear-gradient(to right, rgb(14, 14, 58), rgb(46, 8, 46));
+  color: var(--white-color);
+}
+
+.plans {
+  padding: 5rem 0;
+}
+
+.indiviual-team {
+  width: 400px;
+  height: 42px;
+  background-color: rgb(14, 14, 58);
+  border-radius: 20px;
+  border: 1px solid rgb(62, 71, 122);
+}
+.indiviual-team input {
+  width: 400px;
+}
+
+.indiviual-team {
+  align-items: center;
+}
+
+.plans-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  color: black;
+  margin-top: 4rem;
+}
+
+.starter,
+.professional,
+.enterprise {
+  background-color: white;
+  padding: 34px 40px;
+  border-radius: 30px;
+  width: 250px;
+}
+
+.starter h1,
+.professional h1,
+.enterprise h1 {
+  font-size: 40px;
+}
+
+.starter div,
+.professional div,
+.enterprise div {
+  padding: 10px;
+}
+
+.price {
+  font-size: 50px;
+}
+
+.starter button,
+.professional button,
+.enterprise button {
+  color: var(--white-color);
+  background-color: #ff335f;
+  width: 140px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
 }
 
 @media (max-width: 576px) {
@@ -501,7 +572,7 @@ button {
     font-size: x-small;
   }
 
-  .navbar ul{
+  .navbar ul {
     justify-content: start;
   }
 
@@ -564,7 +635,7 @@ button {
   }
 
   .languages-div div {
-    margin-top: 30px;
+    margin: 30px 30px;
   }
 
   .popular {
@@ -594,7 +665,8 @@ button {
   .percentages,
   .small-cards,
   .code-course,
-  .platform-cards {
+  .platform-cards,
+  .plans-cards {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -613,11 +685,17 @@ button {
   .free-courses a {
     margin-left: 20px;
   }
- .course-case {
-  padding-top: 0;
- } 
+  .course-case {
+    padding-top: 0;
+  }
 
- .platform-cards {
-  padding: 20px;
- }
+  .platform-cards {
+    padding: 20px;
+  }
+  .plans {
+   justify-content: center;
+  }
+  .plans-cards {
+    padding-left: 2rem;
+  }
 }
