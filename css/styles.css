@@ -45,7 +45,7 @@
 }
 
 .navbar-two {
-  height: 70px;
+  height: 100px;
   background-color: rgb(25, 25, 70);
   color: var(--white-color);
 }
@@ -65,6 +65,10 @@
 
 .skills-head .buttons ul li {
   margin-right: 10px;
+}
+
+.languages-div {
+  display: flex;
 }
 
 .contact-btn {
@@ -98,7 +102,7 @@
 
 .where-teams {
   background-image: linear-gradient(to right, rgb(56, 2, 107), rgb(25, 25, 70));
-  padding: 100px;
+  padding: 200px;
 }
 
 .card {
@@ -444,9 +448,6 @@ button {
   font-size: 18px;
 }
 
-.coll-solutions {
-  padding: 0 3rem;
-}
 .solution a,
 .coll-solutions a {
   position: relative;
@@ -548,7 +549,7 @@ button {
     margin-right: 5px;
   }
   .navbar-two {
-    height: 100px;
+    height: 80px;
   }
 
   .plural-head {
@@ -572,7 +573,7 @@ button {
 
   .where-teams {
     padding: 0;
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 
   .card {
@@ -615,9 +616,6 @@ button {
   #order-skill {
     order: 1;
   }
-  .small-cards {
-    padding: 12px 0px 42px 42px;
-  }
 
   .card,
   .popular,
@@ -658,7 +656,7 @@ button {
     justify-content: center;
   }
   .plans-cards {
-    padding-left: 2rem;
+    padding-left: 5rem;
   }
   .plans img {
     width: 40%;
@@ -666,5 +664,8 @@ button {
 
   .indiviual-team {
     width: 250px;
+  }
+  .small-cards {
+    padding: 5rem;
   }
 }
