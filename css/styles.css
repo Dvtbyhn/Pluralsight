@@ -515,9 +515,7 @@ button {
   border-radius: 20px;
   border: 1px solid rgb(62, 71, 122);
 }
-.indiviual-team input {
-  width: 400px;
-}
+
 
 .indiviual-team {
   align-items: center;
@@ -644,7 +642,7 @@ button {
   }
 
   .brands {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
   }
   .brands img {
@@ -698,5 +696,13 @@ button {
   }
   .plans-cards {
     padding-left: 2rem;
+  }
+  .plans img {
+    width: 40%;
+  }
+
+  .indiviual-team {
+    width: 250px;
+
   }
 }
