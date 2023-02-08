@@ -215,7 +215,8 @@ button {
   margin-top: 20px;
 }
 .brands {
-  display: inline-flex;
+  text-align: center;
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 .upskill {
@@ -425,6 +426,9 @@ button {
   padding-top: 20px;
   font-size: 19px;
 }
+.fa-chart-simple {
+ margin-left: 20px;
+}
 
 .platform-cards span {
   display: inline-flex;
@@ -459,8 +463,8 @@ button {
   }
 
   .skills-head .list ul li {
-  margin-right: 9px;
-}
+    margin-right: 9px;
+  }
 
   .buttons {
     display: flex;
@@ -508,6 +512,10 @@ button {
     padding: 10px;
   }
 
+  .brands {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+  }
   .brands img {
     height: 20px;
   }
@@ -534,11 +542,11 @@ button {
   .code-course {
     padding: 20px;
   }
-  .exp-img {
-    margin-left: 50px;
+  .skill-case {
+    margin-left: 10px;
   }
-  .experience-list {
-    width: 100%;
+  .experience-list ul {
+    padding: 0;
   }
   .free-courses {
     display: block;
@@ -546,4 +554,11 @@ button {
   .free-courses a {
     margin-left: 20px;
   }
+ .course-case {
+  padding-top: 0;
+ } 
+
+ .platform-cards {
+  padding: 20px;
+ }
 }
