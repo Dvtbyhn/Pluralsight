@@ -8,7 +8,6 @@
   --tomato: #ff5733;
 }
 
-
 .fix-header {
   position: fixed;
   width: 100%;
@@ -30,9 +29,7 @@
 .navbar-two img {
   width: 100px;
 }
-.navbar ul {
-  display: inline-flex;
-}
+
 .navbar ul li {
   margin-right: 30px;
 }
@@ -58,9 +55,8 @@
   justify-content: space-between;
   padding: 20px;
 }
-
-.skills-head .list ul {
-  display: inline-flex;
+.skills-head ul {
+  align-items: center;
 }
 
 .skills-head .list ul li {
@@ -68,7 +64,6 @@
 }
 
 .skills-head .buttons ul li {
-  display: inline-flex;
   margin-right: 10px;
 }
 
@@ -162,15 +157,10 @@ button {
   margin-top: 20px;
 }
 
-.languages-div {
-  display: flex;
-}
-
 .languages .languages-div div {
   margin-right: 40px;
   border-radius: 10px;
   max-width: 80px;
-  
 }
 
 .languages .languages-div div:hover {
@@ -208,16 +198,11 @@ button {
   padding: 50px 50px;
 }
 
-.section-brands h3 {
-  text-align: center;
-}
-
 .brands img {
   height: 40px;
   margin-top: 20px;
 }
 .brands {
-  text-align: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -241,10 +226,6 @@ button {
   width: 90%;
 }
 
-.upskill-btn {
-  display: flex;
-}
-
 .upskill-left a {
   color: var(--tomato);
   margin-left: 20px;
@@ -254,13 +235,11 @@ button {
   background-color: rgb(25, 25, 70);
   color: var(--white-color);
   padding: 50px;
-  text-align: center;
 }
 
 .percentages {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  text-align: center;
   padding: 50px;
 }
 
@@ -350,11 +329,6 @@ button {
   background-color: rgb(209, 204, 196);
 }
 
-.experience-list ul li a {
-  display: flex;
-  justify-content: space-between;
-}
-
 .experience h1 {
   font-size: 35px;
 }
@@ -382,9 +356,6 @@ button {
 }
 
 .free-courses {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 40px;
 }
 .free-courses a,
@@ -407,6 +378,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  padding-bottom: 5rem;
 }
 
 .orange-card,
@@ -431,10 +403,6 @@ button {
 }
 .fa-chart-simple {
   margin-left: 20px;
-}
-
-.platform-cards span {
-  display: inline-flex;
 }
 
 .platform-cards img {
@@ -477,14 +445,12 @@ button {
 }
 
 .coll-solutions {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 0 3rem;
 }
 .solution a,
 .coll-solutions a {
   position: relative;
   left: 20px;
-
 }
 
 .col-btn {
@@ -496,7 +462,6 @@ button {
   position: relative;
   top: 35px;
   right: 20px;
-  
 }
 
 .plans-pricing {
@@ -516,7 +481,6 @@ button {
   border: 1px solid rgb(62, 71, 122);
 }
 
-
 .indiviual-team {
   align-items: center;
 }
@@ -524,17 +488,17 @@ button {
 .plans-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
   text-align: center;
   color: black;
-  margin-top: 4rem;
+  padding: 1rem 8rem;
+  gap: 10px;
 }
 
 .starter,
 .professional,
 .enterprise {
   background-color: white;
-  padding: 34px 40px;
+  padding: 24px 30px;
   border-radius: 30px;
   width: 250px;
 }
@@ -542,13 +506,13 @@ button {
 .starter h1,
 .professional h1,
 .enterprise h1 {
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .starter div,
 .professional div,
 .enterprise div {
-  padding: 10px;
+  padding: 15px;
 }
 
 .price {
@@ -566,6 +530,11 @@ button {
   border: none;
 }
 
+.professional a,
+.enterprise a {
+  color: #ff335f;
+}
+
 @media (max-width: 576px) {
   .navbar {
     font-size: x-small;
@@ -581,20 +550,15 @@ button {
   .navbar-two {
     height: 100px;
   }
- 
+
   .plural-head {
     justify-content: center;
   }
-
- 
-
- 
-
-  .skills-head .list ul li  {
+  .skills-head .list ul li {
     font-size: 6px;
     margin-right: 12px;
   }
-  .buttons{
+  .buttons {
     display: none;
   }
   .list ul li {
@@ -602,7 +566,8 @@ button {
     font-size: 9px;
   }
   .skills-head {
-  justify-content: center;
+    justify-content: center;
+  
   }
 
   .where-teams {
@@ -690,7 +655,7 @@ button {
     padding: 20px;
   }
   .plans {
-   justify-content: center;
+    justify-content: center;
   }
   .plans-cards {
     padding-left: 2rem;
@@ -701,7 +666,5 @@ button {
 
   .indiviual-team {
     width: 250px;
-
   }
-
 }
