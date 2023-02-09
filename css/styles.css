@@ -102,7 +102,7 @@
 
 .where-teams {
   background-image: linear-gradient(to right, rgb(56, 2, 107), rgb(25, 25, 70));
-  padding: 200px;
+  padding: 150px 0;
 }
 
 .card {
@@ -161,41 +161,45 @@ button {
   margin-top: 20px;
 }
 
-.languages .languages-div div {
-  margin-right: 40px;
-  border-radius: 10px;
-  max-width: 80px;
+
+.languages-logo ul li  {
+  margin-right: 30px;
+  transition: bottom 2s;
 }
 
-.languages .languages-div div:hover {
-  position: relative;
-  bottom: 10px;
-  border: 2px solid var(--tomato);
+.languages-logo ul li img:hover {
+   position:relative;
+  bottom: 20px;
 }
 
 .small-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  width: 60%;
 }
 
 .play-card,
 .million-card,
 .customers-card,
 .percent-card {
-  width: 260px;
-  height: 150px;
   background-color: white;
-  padding: 20px;
+  padding: 16px;
   border-radius: 20px;
+}
+
+.card-element {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .play-card img,
 .million-card img,
 .customers-card img,
 .percent-card img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .section-brands {
@@ -213,6 +217,7 @@ button {
 .upskill {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 4rem;
 }
 
 .upskill-left h1 {
@@ -490,6 +495,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+  justify-content: center;
   color: black;
   padding: 1rem 8rem;
   gap: 10px;
@@ -541,10 +547,6 @@ button {
     font-size: x-small;
   }
 
-  .navbar ul {
-    justify-content: start;
-  }
-
   .navbar ul li {
     margin-right: 5px;
   }
@@ -556,7 +558,7 @@ button {
     justify-content: center;
   }
   .skills-head .list ul li {
-    font-size: 6px;
+    font-size: 7px;
     margin-right: 12px;
   }
   .buttons {
@@ -568,7 +570,7 @@ button {
   }
   .skills-head {
     justify-content: center;
-  
+    align-items: center;
   }
 
   .where-teams {
@@ -592,13 +594,20 @@ button {
     font-size: x-small;
   }
 
-  .languages-div {
+  .languages-logo ul  {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .languages-logo ul li {
+    margin: 33px 0;
   }
 
-  .languages-div div {
-    margin: 30px 30px;
+  .small-cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
+  }
+
+  .small-cards {
   }
 
   .popular {
@@ -607,7 +616,6 @@ button {
 
   .brands {
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
   }
   .brands img {
     height: 20px;
@@ -652,20 +660,12 @@ button {
   .platform-cards {
     padding: 20px;
   }
-  .plans {
-    justify-content: center;
-  }
-  .plans-cards {
-    padding-left: 5rem;
-  }
+
   .plans img {
     width: 40%;
   }
 
   .indiviual-team {
     width: 250px;
-  }
-  .small-cards {
-    padding: 5rem;
   }
 }
