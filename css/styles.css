@@ -25,16 +25,19 @@
   justify-content: space-between;
   align-items: center;
 }
-.navbar img,
-.navbar-two img {
+.navbar img {
   width: 100px;
 }
+
 
 .navbar ul li {
   margin-right: 30px;
 }
-
-.navbar a {
+.navbar-two img {
+  height: 30px;
+ width:100px
+};  
+.plural-head  ul li a {
   text-decoration: none;
   color: var(--white-color);
 }
@@ -52,15 +55,16 @@
 
 .skills-head {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 20px;
 }
 .skills-head ul {
   align-items: center;
 }
 
-.skills-head .list ul li {
-  margin-right: 9px;
+.skills-head ul li {
+  margin-right: 59px;
 }
 
 .skills-head .buttons ul li {
@@ -175,6 +179,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  justify-content: center;
   width: 60%;
 }
 
@@ -183,8 +188,8 @@ button {
 .customers-card,
 .percent-card {
   background-color: white;
-  padding: 16px;
   border-radius: 20px;
+  padding: 10px;
 }
 
 .card-element {
@@ -660,12 +665,6 @@ footer {
   padding-top: 20px;
 }
 
-.social-media,
-ul li {
-  position: relative;
-  left: -20px;
-}
-
 .social-media ul li {
   padding: 10px;
 }
@@ -677,10 +676,12 @@ ul li {
   color: var(--white-color);
   padding: 50px 0;
 }
+
 .footer-header h6 {
   margin-right: 22px;
   color: rgb(96, 96, 143);
 }
+
 .footer-end code {
   margin-left: 5px;
 }
@@ -700,17 +701,14 @@ ul li {
   .plural-head {
     justify-content: center;
   }
-  .skills-head .list ul li {
+  .skills-head  ul li {
     font-size: 7px;
     margin-right: 12px;
   }
   .buttons {
     display: none;
   }
-  .list ul li {
-    margin-right: 0px;
-    font-size: 9px;
-  }
+
   .skills-head {
     justify-content: center;
     align-items: center;
@@ -808,10 +806,6 @@ ul li {
 
   .indiviual-team {
     width: 250px;
-  }
-
-  .contact-case {
-    padding-left: 2.5rem;
   }
   .ask-case h1 {
     font-size: 34px;
