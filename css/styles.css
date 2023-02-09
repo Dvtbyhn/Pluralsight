@@ -86,7 +86,7 @@
 }
 
 .free-btn {
-  width: 130px;
+  width: 150px;
   background-color: rgb(221, 69, 69);
   padding: 10px;
   border-radius: 20px;
@@ -606,10 +606,6 @@ button {
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
   }
-
-  .small-cards {
-  }
-
   .popular {
     padding: 10px;
   }
