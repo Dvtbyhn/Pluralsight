@@ -161,14 +161,13 @@ button {
   margin-top: 20px;
 }
 
-
-.languages-logo ul li  {
+.languages-logo ul li {
   margin-right: 30px;
   transition: bottom 2s;
 }
 
 .languages-logo ul li img:hover {
-   position:relative;
+  position: relative;
   bottom: 20px;
 }
 
@@ -543,22 +542,18 @@ button {
 }
 
 .chat-case {
- background: linear-gradient(85deg, rgb(123, 3, 192), rgb(1, 1, 83));
- color: var(--white-color);
+  background: linear-gradient(85deg, rgb(123, 3, 192), rgb(1, 1, 83));
+  color: var(--white-color);
 }
 
 .contact-case {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding-top: 10rem;
 }
 
-.contact-case form label {
-  display: block;
-}
-
-.ask-case p{
- font-size:20px;
+.ask-case p {
+  font-size: 20px;
 }
 .ask-case h1 {
   font-size: 50px;
@@ -566,21 +561,19 @@ button {
 
 .form-case {
   border-radius: 30px;
-
 }
 .form-case div {
   padding-top: 1rem;
 }
 
-
-.contact-case input[type="text"],select {
+.contact-case input[type="text"],
+select {
   width: 100%;
   height: 30px;
-   background-color: rgb(37, 37, 112);
-   border: none;
-   margin-top: 20px;
-   outline: none;
-  
+  background-color: rgb(37, 37, 112);
+  border: none;
+  margin-top: 20px;
+  outline: none;
 }
 
 select {
@@ -590,7 +583,7 @@ select {
 .form-case {
   width: 70%;
   background-color: rgb(14, 14, 58);
-  padding: 3rem ;
+  padding: 3rem;
   margin-bottom: 6rem;
 }
 
@@ -607,6 +600,89 @@ select {
 }
 .inputs button {
   margin: 20px;
+}
+
+footer {
+  background-color: rgb(25, 25, 70);
+  padding-top: 5rem;
+}
+
+.footer-case {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 1px solid rgb(96, 96, 143);
+}
+
+.footer-case h2 {
+  color: white;
+}
+
+.footer-case ul li {
+  color: rgb(96, 96, 143);
+  padding: 5px;
+  transition: 500ms color;
+  cursor: pointer;
+}
+.footer-case ul li:hover {
+  color: rgb(210, 217, 221);
+}
+
+.news {
+  position: relative;
+  left: 25px;
+}
+.news input[type="text"] {
+  width: 70%;
+  border-radius: 10px;
+}
+.news label {
+  color: rgb(96, 96, 143);
+}
+
+.news input {
+  padding: 10px;
+  background-color: rgb(37, 37, 112);
+  border: none;
+  margin-top: 10px;
+  outline: none;
+}
+
+.news button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--tomato);
+  color: var(--white-color);
+  border: none;
+}
+.news-input,
+.social-media {
+  padding-top: 20px;
+}
+
+.social-media,
+ul li {
+  position: relative;
+  left: -20px;
+}
+
+.social-media ul li {
+  padding: 10px;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  padding: 50px 0;
+}
+.footer-header h6 {
+  margin-right: 22px;
+  color: rgb(96, 96, 143);
+}
+.footer-end code {
+  margin-left: 5px;
 }
 
 @media (max-width: 576px) {
@@ -661,7 +737,7 @@ select {
     font-size: x-small;
   }
 
-  .languages-logo ul  {
+  .languages-logo ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -698,7 +774,8 @@ select {
   .code-course,
   .platform-cards,
   .plans-cards,
-  .contact-case {
+  .contact-case,
+  .footer-case {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -732,11 +809,16 @@ select {
   .indiviual-team {
     width: 250px;
   }
+
   .contact-case {
-    padding-top: 2rem;
-    justify-content: center;
+    padding-left: 2.5rem;
   }
   .ask-case h1 {
-  font-size: 34px;
-}
+    font-size: 34px;
+  }
+  .footer-end {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding:20px 20px;
+  }
 }
