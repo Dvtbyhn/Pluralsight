@@ -145,6 +145,7 @@ button {
   width: 100%;
   height: auto;
   object-fit: cover;
+  padding-top: 20px;
 }
 
 .popular {
@@ -683,8 +684,7 @@ footer {
   }
 
   .where-teams {
-    padding: 0;
-    padding-top: 5rem;
+    padding:5rem 0;
   }
   .popular {
     grid-template-columns: repeat(2, 1fr);
@@ -784,7 +784,7 @@ footer {
   }
 
   .newsletter {
-    max-width: 400px;
+    max-width: 370px;
   }
 }
 
@@ -1100,8 +1100,9 @@ footer {
 }
 
 @media (min-width: 1024px) and (max-width: 1400px) {
-  .navbar ul li {
-    margin-right: 19px;
+
+    .skills-head ul li {
+    margin-right: 30px;
   }
   .languages-logo ul {
     grid-template-columns: repeat(5, 1fr);
