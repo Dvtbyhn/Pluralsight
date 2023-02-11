@@ -33,8 +33,8 @@
   margin-right: 30px;
 }
 .navbar-two img {
-  height: 30px;
-  width: 100px;
+  height: 20px;
+  width: 70px;
 }
 .plural-head .link-bottom {
   text-decoration: none;
@@ -121,9 +121,11 @@
   color: var(--white-color);
 }
 
-.card-text h4,
-h1,
-p {
+.card-text h4 {
+  padding: 20px;
+}
+p,
+h1 {
   padding: 20px;
 }
 
@@ -188,7 +190,7 @@ button {
 .percent-card {
   background-color: white;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .card-element {
@@ -369,6 +371,7 @@ button {
 
 .free-courses {
   margin-top: 40px;
+  padding: 20px;
 }
 .free-courses a,
 .our-solutions a {
@@ -553,7 +556,10 @@ button {
 .contact-case {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+
   padding-top: 10rem;
+  gap: 20px;
 }
 
 .ask-case p {
@@ -613,7 +619,7 @@ footer {
 
 .footer-case {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 250px);
   border-bottom: 1px solid rgb(96, 96, 143);
 }
 
@@ -627,38 +633,13 @@ footer {
   transition: 500ms color;
   cursor: pointer;
 }
-.footer-case ul li:hover {
+.support,
+.community,
+.company,
+.industries ul li:hover {
   color: rgb(210, 217, 221);
 }
 
-.news {
-  position: relative;
-  left: 25px;
-}
-.news input[type="text"] {
-  width: 70%;
-  border-radius: 10px;
-}
-.news label {
-  color: rgb(96, 96, 143);
-}
-
-.news input {
-  padding: 10px;
-  background-color: rgb(37, 37, 112);
-  border: none;
-  margin-top: 10px;
-  outline: none;
-}
-
-.news button {
-  width: 100px;
-  height: 30px;
-  border-radius: 20px;
-  background-color: var(--tomato);
-  color: var(--white-color);
-  border: none;
-}
 .news-input,
 .social-media {
   padding-top: 20px;
@@ -683,6 +664,17 @@ footer {
 
 .footer-end code {
   margin-left: 5px;
+}
+
+.newsletter {
+  width: 400px;
+}
+.newsletter input[type="text"] {
+  background-color: rgb(43, 43, 110);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(60, 60, 134);
+  outline: none;
 }
 
 @media (max-width: 576px) {
@@ -806,6 +798,10 @@ footer {
   .indiviual-team {
     width: 250px;
   }
+
+  .contact-case {
+    padding: 3rem 3rem;
+  }
   .ask-case h1 {
     font-size: 34px;
   }
@@ -813,5 +809,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 20px 20px;
+  }
+
+  .newsletter {
+    max-width: 400px;
   }
 }
