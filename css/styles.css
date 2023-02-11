@@ -689,9 +689,7 @@ footer {
     height: 80px;
   }
 
-  .plural-head {
-    justify-content: center;
-  }
+ 
   .skills-head ul li {
     font-size: 7px;
     margin-right: 12px;
@@ -701,7 +699,6 @@ footer {
   }
 
   .skills-head {
-    justify-content: center;
     align-items: center;
   }
 
