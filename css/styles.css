@@ -545,6 +545,7 @@ button {
 .contact-case {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   padding-top: 10rem;
   gap: 20px;
 }
@@ -745,9 +746,9 @@ footer {
     padding-bottom: 2rem;
   }
   .contact-case {
-    grid-template-columns: repeat(1, 420px);
-    justify-content: center;
+    grid-template-columns: repeat(1,360px);
   }
+
 
   .plans-cards {
     grid-template-columns: repeat(1, 300px);
