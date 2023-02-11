@@ -50,6 +50,6 @@
 }
 
 .flex-between {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
 }
