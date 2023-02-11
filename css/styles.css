@@ -132,13 +132,20 @@ h1 {
   font-size: 40px;
 }
 
-.card-btn {
+.where-btn {
   display: flex;
   align-items: center;
 }
-.card-btn h5,
-button {
-  margin-left: 20px;
+.card-btn {
+  background-color: #ff5733;
+  color: var(--white-color);
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+  padding: 8px;
+}
+.card-btn {
+  margin-left: 10px;
 }
 
 .hero img {
@@ -159,14 +166,17 @@ button {
   display: inline-block;
   margin-top: 20px;
 }
+
+
 .languages-logo ul {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
+  justify-content: start;
 }
 
 .languages-logo ul li {
   margin-right: 10px;
-  transition: bottom 2s;
+
 }
 
 .languages-logo ul li img:hover {
@@ -697,12 +707,13 @@ footer {
   .card-text h1 {
     font-size: 20px;
   }
+ 
   .languages-logo ul {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);    
   }
 
   .languages-logo ul li {
-    margin: 33px 10px;
+    margin-top: 20px;
   }
 
   .brands {
@@ -826,7 +837,8 @@ footer {
     font-size: 20px;
   }
   .languages-logo ul {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1px);
+    
   }
 
   .languages-logo ul li {
