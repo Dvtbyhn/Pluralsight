@@ -194,7 +194,6 @@ button {
   background-color: white;
   border-radius: 20px;
   padding: 20px;
-  
 }
 
 .card-element {
@@ -715,7 +714,6 @@ footer {
     margin: 33px;
   }
 
-  
   .popular {
     padding: 10px;
   }
@@ -742,16 +740,17 @@ footer {
   .footer-case {
     grid-template-columns: repeat(1, 1fr);
   }
-.small-cards {
+  .small-cards {
     grid-template-columns: repeat(2, 200px);
     padding-bottom: 2rem;
   }
   .contact-case {
-       grid-template-columns: repeat(1,500px);
-       justify-content: center;
+    grid-template-columns: repeat(1, 420px);
+    justify-content: center;
   }
+
   .plans-cards {
-    grid-template-columns: repeat(1,300px);
+    grid-template-columns: repeat(1, 300px);
   }
 
   .code-course {
@@ -780,7 +779,7 @@ footer {
     width: 40%;
   }
   .ask-case h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
   .footer-end {
     display: grid;
@@ -794,5 +793,4 @@ footer {
   .newsletter {
     max-width: 400px;
   }
-
 }
