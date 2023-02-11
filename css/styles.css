@@ -69,11 +69,6 @@
 .skills-head .buttons ul li {
   margin-right: 10px;
 }
-
-.languages-div {
-  display: flex;
-}
-
 .contact-btn {
   width: 130px;
   background-color: rgb(25, 25, 70);
@@ -158,20 +153,18 @@ button {
   color: var(--white-color);
   padding: 50px;
 }
-.popular .topics {
-  padding: 10px;
-}
+
 .topics a {
   display: inline-block;
   margin-top: 20px;
 }
-
 .languages-logo ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
 }
+
 .languages-logo ul li {
-  margin-right: 30px;
+  margin-right: 10px;
   transition: bottom 2s;
 }
 
@@ -195,7 +188,6 @@ button {
   border-radius: 20px;
   padding: 20px;
 }
-
 .card-element {
   display: flex;
   justify-content: start;
@@ -236,6 +228,7 @@ button {
   background-color: white;
   border-radius: 20px;
   width: 150px;
+  padding: 10px;
   border: 1px solid black;
 }
 
@@ -283,7 +276,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 7rem;
-  gap: 100px;
+  gap: 20px;
 }
 .stories a,
 .fujitsu-card a,
@@ -311,7 +304,6 @@ button {
 .stories,
 .fujitsu-card,
 .maritz-card {
-  width: 80%;
   padding: 40px;
   border-radius: 20px;
 }
@@ -355,7 +347,7 @@ button {
   color: white;
 }
 .course-case {
-  padding-top: 10rem;
+  padding-top: 4rem;
 }
 
 .code-course {
@@ -404,7 +396,7 @@ button {
 .purple-card {
   background-color: var(--white-color);
   color: black;
-  padding: 13px 0px 10px 20px;
+  padding: 13px 0px 12px 20px;
   border-radius: 20px;
 }
 .orange-card h4,
@@ -667,8 +659,8 @@ footer {
   border: 1px solid rgb(60, 60, 134);
   outline: none;
 }
-
-@media (max-width: 768px) {
+/* mobile */
+@media (max-width: 576px) {
   .navbar {
     font-size: x-small;
   }
@@ -694,6 +686,10 @@ footer {
     padding: 0;
     padding-top: 5rem;
   }
+  .popular {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
 
   .card {
     border-radius: 0;
@@ -701,22 +697,140 @@ footer {
   .card-text h1 {
     font-size: 20px;
   }
-
-  .contact-btn {
-    width: 70px;
-    font-size: x-small;
-  }
-  .free-btn {
-    width: 70px;
-    font-size: x-small;
+  .languages-logo ul {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .languages-logo ul li {
-    margin: 33px;
+    margin: 33px 10px;
   }
 
+  .brands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .brands img {
+    height: 20px;
+  }
+
+  #order-skill {
+    order: 1;
+  }
+
+  .card,
+  .popular,
+  .customers,
+  .skill-case,
+  .upskill,
+  .percentages,
+  .code-course,
+  .platform-cards,
+  .footer-case {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .customers {
+    padding: 20px;
+  }
+  .small-cards {
+    grid-template-columns: repeat(1, 200px);
+    padding: 3rem;
+  }
+  .contact-case {
+    grid-template-columns: repeat(1, 340px);
+  }
+
+  .plans-cards {
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .code-course {
+    padding: 20px;
+  }
+  .skill-case {
+    margin-left: 10px;
+  }
+  .experience-list ul {
+    padding: 0;
+  }
+  .free-courses,
+  .free-btn {
+    display: block;
+  }
+  .learn-btn {
+    margin-top: 5px;
+  }
+  .free-courses a {
+    margin-left: 20px;
+  }
+  .course-case {
+    padding-top: 0;
+  }
+
+  .platform-cards {
+    padding: 20px;
+  }
+  .plans img {
+    width: 40%;
+  }
+  .ask-case h1 {
+    font-size: 30px;
+  }
+  .footer-end {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 20px;
+  }
+  .footer-image {
+    padding-bottom: 12px;
+  }
+
+  .newsletter {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar {
+    font-size: x-small;
+  }
+  .navbar ul li {
+    margin-right: 5px;
+  }
+  .navbar-two {
+    height: 80px;
+  }
+  .skills-head ul li {
+    font-size: 7px;
+    margin-right: 7px;
+  }
+  .buttons {
+    display: none;
+  }
+
+  .skills-head {
+    align-items: center;
+  }
+
+  .where-teams {
+    padding: 0;
+    padding-top: 5rem;
+  }
   .popular {
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
+  }
+
+  .card {
+    border-radius: 0;
+  }
+  .card-text h1 {
+    font-size: 20px;
+  }
+  .languages-logo ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .languages-logo ul li {
+    margin: 33px 10px;
   }
 
   .brands {
@@ -742,13 +856,12 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
   .small-cards {
-    grid-template-columns: repeat(2, 200px);
-    padding-bottom: 2rem;
+    grid-template-columns: repeat(1, 200px);
+    padding: 3rem;
   }
   .contact-case {
-    grid-template-columns: repeat(1,360px);
+    grid-template-columns: repeat(1, 340px);
   }
-
 
   .plans-cards {
     grid-template-columns: repeat(1, 300px);
@@ -793,5 +906,217 @@ footer {
 
   .newsletter {
     max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar ul li {
+    margin-right: 9px;
+  }
+  .navbar-two {
+    height: 80px;
+  }
+  .skills-head ul li {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+  .buttons {
+    display: none;
+  }
+
+  .skills-head {
+    align-items: center;
+  }
+
+  .where-teams {
+    padding: 0;
+    padding-top: 5rem;
+  }
+
+  .card {
+    border-radius: 0;
+  }
+  .card-text h1 {
+    font-size: 20px;
+  }
+  .languages-logo ul {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .languages-logo ul li {
+    margin: 33px 10px;
+  }
+
+  .brands img {
+    height: 20px;
+  }
+
+  #order-skill {
+    order: 1;
+  }
+
+  .card,
+  .popular,
+  .customers,
+  .skill-case,
+  .upskill,
+  .percentages,
+  .code-course,
+  .platform-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-case {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .small-cards {
+    grid-template-columns: repeat(2, 200px);
+    padding: 3rem;
+  }
+  .contact-case {
+    grid-template-columns: repeat(1, 590px);
+    padding: 2rem;
+  }
+
+  .plans-cards {
+    grid-template-columns: repeat(3, 250px);
+  }
+
+  .code-course {
+    padding: 20px;
+  }
+  .skill-case {
+    margin-left: 10px;
+  }
+  .experience-list ul {
+    padding: 0;
+  }
+  .free-courses {
+    display: block;
+  }
+  .free-courses a {
+    margin-left: 20px;
+  }
+  .course-case {
+    padding-top: 0;
+  }
+
+  .platform-cards {
+    padding: 20px;
+  }
+  .plans img {
+    width: 40%;
+  }
+  .ask-case h1 {
+    font-size: 30px;
+  }
+  .footer-end {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 20px;
+  }
+  .footer-image {
+    padding-bottom: 12px;
+  }
+
+  .newsletter {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .skills-head ul li {
+    font-size: 13px;
+  }
+
+  .contact-btn {
+    width: 100px;
+    font-size: x-small;
+  }
+  .free-btn {
+    width: 100px;
+    font-size: x-small;
+  }
+
+  .popular {
+    padding: 10px;
+  }
+  .brands img {
+    height: 30px;
+  }
+  .languages-logo ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .card,
+  .popular,
+  .skill-case,
+  .upskill {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-case,
+  .platform-cards,
+  .code-course,
+  .customers,
+  .percentages {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .platform-cards {
+    padding: 20px;
+  }
+  .small-cards {
+    grid-template-columns: repeat(4, 230px);
+    padding: 3rem;
+  }
+  .contact-case {
+    grid-template-columns: repeat(2, 470px);
+    padding: 2rem;
+  }
+
+  .plans-cards {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .code-course {
+    padding: 20px;
+  }
+  .skill-case {
+    margin-left: 10px;
+  }
+  .experience-list ul {
+    padding: 0;
+  }
+  .free-courses {
+    display: block;
+  }
+  .free-courses a {
+    margin-left: 20px;
+  }
+  .plans img {
+    width: 40%;
+  }
+  .ask-case h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .navbar ul li {
+    margin-right: 19px;
+  }
+  .languages-logo ul {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .platform-cards {
+    padding: 20px;
+  }
+  .small-cards {
+    padding: 3rem;
+  }
+  .experience {
+    padding: 1rem;
+  }
+
+  .footer-case {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
