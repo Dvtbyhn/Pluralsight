@@ -20,11 +20,6 @@
   padding-top: 20px;
 }
 
-.plural-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .navbar img {
   width: 100px;
 }
@@ -53,9 +48,6 @@
 }
 
 .skills-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 20px;
 }
 .skills-head ul {
@@ -117,14 +109,6 @@
 }
 
 .card-text h4 {
-  padding: 20px;
-}
-p,
-h1 {
-  padding: 20px;
-}
-
-.card-text h4 {
   color: rgb(248, 98, 123);
 }
 
@@ -167,7 +151,6 @@ h1 {
   margin-top: 20px;
 }
 
-
 .languages-logo ul {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -176,7 +159,6 @@ h1 {
 
 .languages-logo ul li {
   margin-right: 10px;
-
 }
 
 .languages-logo ul li img:hover {
@@ -609,8 +591,10 @@ footer {
 
 .footer-case {
   display: grid;
-  grid-template-columns: repeat(5, 250px);
+  grid-template-columns: repeat(5, 200px);
+  padding-bottom: 4rem;
   border-bottom: 1px solid rgb(96, 96, 143);
+
 }
 
 .footer-case h2 {
@@ -670,7 +654,16 @@ footer {
   border: 1px solid rgb(60, 60, 134);
   outline: none;
 }
-/* mobile */
+
+.footer-btn {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  background-color: #ff335f;
+  color: #f7f7f7;
+}
 @media (max-width: 576px) {
   .navbar {
     font-size: x-small;
@@ -694,7 +687,7 @@ footer {
   }
 
   .where-teams {
-    padding:5rem 0;
+    padding: 5rem 0;
   }
   .popular {
     grid-template-columns: repeat(2, 1fr);
@@ -707,9 +700,9 @@ footer {
   .card-text h1 {
     font-size: 20px;
   }
- 
+
   .languages-logo ul {
-    grid-template-columns: repeat(3, 1fr);    
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .languages-logo ul li {
@@ -799,7 +792,7 @@ footer {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 766px) {
   .navbar {
     font-size: x-small;
   }
@@ -837,8 +830,7 @@ footer {
     font-size: 20px;
   }
   .languages-logo ul {
-    grid-template-columns: repeat(3, 1px);
-    
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .languages-logo ul li {
@@ -1049,21 +1041,25 @@ footer {
     font-size: x-small;
   }
 
-  .popular {
-    padding: 10px;
-  }
+  
   .brands img {
     height: 30px;
   }
-  .languages-logo ul {
-    grid-template-columns: repeat(6, 1fr);
+
+  .popular {
+    grid-template-columns: repeat(1,1fr);
+    padding: 20px ;
   }
+  .languages-logo{
+    padding-top: 10px;
+  }
+
   .card,
-  .popular,
   .skill-case,
   .upskill {
     grid-template-columns: repeat(2, 1fr);
   }
+ 
   .footer-case,
   .platform-cards,
   .code-course,
@@ -1111,14 +1107,11 @@ footer {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1400px) {
-
-    .skills-head ul li {
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .skills-head ul li {
     margin-right: 30px;
   }
-  .languages-logo ul {
-    grid-template-columns: repeat(5, 1fr);
-  }
+
   .platform-cards {
     padding: 20px;
   }
@@ -1129,7 +1122,21 @@ footer {
     padding: 1rem;
   }
 
+  .languages-logo ul{
+    grid-template-columns: repeat(7,1fr);
+
+  }
+
   .footer-case {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .platform-cards {
+    padding: 20px;
+  }
+    .small-cards {
+    padding: 3rem;
   }
 }
