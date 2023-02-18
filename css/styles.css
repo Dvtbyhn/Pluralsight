@@ -572,12 +572,13 @@ footer {
   .navbar-two {
   display: none;
   }
+  .where-teams{
+    padding-top: 6rem;
+  }
   .skills-head ul li {
     margin-right: 7px;
   }
-  .buttons {
-    display: none;
-  }
+  
 
   .skills-head {
     align-items: center;
@@ -836,12 +837,11 @@ footer {
   }
 
   .where-teams {
-    padding: 0;
-    padding-top: 5rem;
+    padding-top: 13rem;
   }
 
   .card {
-    border-radius: 0;
+    border-radius: 50px;
   }
   .card-text h1 {
     font-size: 20px;
@@ -849,9 +849,11 @@ footer {
   .languages-logo  {
     flex-wrap: wrap;
   }
-
+  .languages-logo div{
+    margin-top: 2rem;
+  }
   .languages-logo div  a {
-    margin: 33px 10px;
+    margin: 13px 10px;
   }
 
   .brands img {
