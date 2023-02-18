@@ -158,6 +158,9 @@
   display: inline-block;
   margin-top: 20px;
 }
+.languages-logo ul {
+  justify-content: center;
+}
 
 .languages-logo ul li {
   margin-right: 10px;
