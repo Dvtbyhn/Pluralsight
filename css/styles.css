@@ -158,19 +158,20 @@
   display: inline-block;
   margin-top: 20px;
 }
-.languages-logo ul {
+.languages-logo  {
+  display: flex;
   justify-content: center;
 }
 
-.languages-logo ul li {
+.languages-logo div {
   margin-right: 10px;
 }
 
-.languages-logo ul li img {
+.languages-logo div img {
   transition: 700ms transform;
 }
 
-.languages-logo ul li img:hover {
+.languages-logo div img:hover {
   transform: translateY(-50px);
 }
 
@@ -185,10 +186,6 @@
   display: flex;
   justify-content: start;
   align-items: center;
-}
-
-.section-brands {
-  padding: 50px 50px;
 }
 
 .brands img {
@@ -591,9 +588,6 @@ footer {
     align-items: center;
   }
 
-  .where-teams {
-    padding: 5rem 0;
-  }
   .popular {
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
@@ -602,15 +596,18 @@ footer {
   .card {
     border-radius: 0;
   }
+  .card-text {
+    padding: 0;
+  }
   .card-text h1 {
     font-size: 20px;
   }
 
-  .languages-logo ul {
+  .languages-logo  {
     flex-wrap: wrap;
   }
 
-  .languages-logo ul li {
+  .languages-logo div {
     margin-top: 20px;
   }
 
@@ -619,6 +616,9 @@ footer {
   }
   .brands img {
     height: 20px;
+  }
+  .upskill{
+    padding: 10px;
   }
 
   #order-skill {
@@ -738,11 +738,11 @@ footer {
   .card-text h1 {
     font-size: 20px;
   }
-  .languages-logo ul {
+  .languages-logo  {
     flex-wrap: wrap;
   }
-  .languages-logo ul li {
-    margin: 33px 10px;
+  .languages-logo div  {
+    margin-top: 13px ;
   }
 
   .brands {
@@ -851,18 +851,20 @@ footer {
   .card-text h1 {
     font-size: 20px;
   }
-  .languages-logo ul {
+  .languages-logo  {
     flex-wrap: wrap;
   }
 
-  .languages-logo ul li {
+  .languages-logo div  a {
     margin: 33px 10px;
   }
 
   .brands img {
     height: 20px;
   }
-
+.upskill{
+    padding: 10px;
+  }
   #order-skill {
     order: 1;
   }
@@ -1028,7 +1030,7 @@ footer {
     padding: 1rem;
   }
 
-  .languages-logo ul {
+  .languages-logo div {
     flex-wrap: wrap;
   }
 
