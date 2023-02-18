@@ -6,6 +6,24 @@
 :root {
   --white-color: #fff;
   --tomato: #ff5733;
+  --bg-color: #191946;
+}
+
+.percentages,
+.customers,
+.code-course,
+.platform-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card,
+.upskill,
+.popular,
+.skill-case,
+.contact-case {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .fix-header {
@@ -37,13 +55,12 @@
 }
 
 .navbar .link-bottom:hover {
-  cursor: pointer;
   border-bottom: 3px solid var(--tomato);
 }
 
 .navbar-two {
   height: 100px;
-  background-color: rgb(25, 25, 70);
+  background-color: var(--bg-color);
   color: var(--white-color);
 }
 
@@ -63,44 +80,37 @@
 }
 .contact-btn {
   width: 130px;
-  background-color: rgb(25, 25, 70);
-  padding: 10px;
-  border-radius: 20px;
+  background-color: var(--bg-color);
   border: 3px solid rgb(88, 88, 146);
 }
 
 .contact-btn:hover {
   background-color: rgb(69, 69, 141);
-  cursor: pointer;
+
   transition: 700ms background-color;
 }
 
 .free-btn {
   width: 150px;
   background-color: rgb(221, 69, 69);
-  padding: 10px;
-  border-radius: 20px;
   border: none;
   color: var(--white-color);
 }
 
 .free-btn:hover {
   background-color: rgb(207, 65, 65);
-  cursor: pointer;
   transition: 700ms background-color;
 }
 
 .where-teams {
   background-image: linear-gradient(to right, rgb(56, 2, 107), rgb(25, 25, 70));
-  padding: 150px 0;
+  padding-top: 12rem;
 }
 
 .card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: rgb(25, 25, 70);
+  background-color: var(--bg-color);
   border-radius: 40px;
-  width: 100%;
+ 
 }
 
 .card-text {
@@ -140,8 +150,6 @@
 }
 
 .popular {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   color: var(--white-color);
   padding: 50px;
 }
@@ -151,19 +159,16 @@
   margin-top: 20px;
 }
 
-.languages-logo ul {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  justify-content: start;
-}
-
 .languages-logo ul li {
   margin-right: 10px;
 }
 
+.languages-logo ul li img {
+  transition: 700ms transform;
+}
+
 .languages-logo ul li img:hover {
-  position: relative;
-  bottom: 20px;
+  transform: translateY(-50px);
 }
 
 .small-cards {
@@ -173,26 +178,10 @@
   justify-content: center;
 }
 
-.play-card,
-.million-card,
-.customers-card,
-.percent-card {
-  background-color: white;
-  border-radius: 20px;
-  padding: 20px;
-}
 .card-element {
   display: flex;
   justify-content: start;
   align-items: center;
-}
-
-.play-card img,
-.million-card img,
-.customers-card img,
-.percent-card img {
-  width: 40px;
-  height: 40px;
 }
 
 .section-brands {
@@ -208,20 +197,25 @@
   grid-template-columns: repeat(5, 1fr);
 }
 .upskill {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   margin-top: 4rem;
+}
+
+.upskill a {
+  display: inline-block;
 }
 
 .upskill-left h1 {
   font-size: 40px;
 }
+.browse-btn {
+  width: 150px;
+  background-color: var(--tomato);
+  border: none;
+  color: var(--white-color);
+}
 
 .learn-btn {
-  background-color: white;
-  border-radius: 20px;
   width: 150px;
-  padding: 10px;
   border: 1px solid black;
 }
 
@@ -231,27 +225,20 @@
 
 .upskill-left a {
   color: var(--tomato);
-  margin-left: 20px;
 }
 
 .investment {
-  background-color: rgb(25, 25, 70);
+  background-color: var(--bg-color);
   color: var(--white-color);
   padding: 50px;
 }
 
 .percentages {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding: 50px;
 }
 
 .percentages img {
   width: 200px;
-}
-
-.percentages p {
-  font-size: 20px;
 }
 
 .returns h1 {
@@ -266,8 +253,6 @@
   background-color: #f7f7f7;
 }
 .customers {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding-top: 7rem;
   gap: 20px;
 }
@@ -281,25 +266,6 @@
   color: var(--tomato);
 }
 
-.stories h2,
-.stories h4,
-.fujitsu-card h4,
-.maritz-card h4,
-.stories div,
-.fujitsu-card div,
-.maritz-card div,
-.stories a,
-.fujitsu-card a,
-.maritz-card a {
-  padding-top: 30px;
-}
-
-.stories,
-.fujitsu-card,
-.maritz-card {
-  padding: 40px;
-  border-radius: 20px;
-}
 .fujitsu-card img,
 .maritz-card img {
   width: 150px;
@@ -316,13 +282,10 @@
   margin-top: 5rem;
 }
 .skill-case {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   padding-bottom: 5rem;
 }
 
 .experience-list ul li {
-  padding: 10px;
   border-bottom: 1px solid gray;
   color: rgb(41, 48, 45);
 }
@@ -331,12 +294,16 @@
   background-color: rgb(209, 204, 196);
 }
 
+.starter button {
+  margin-bottom: 20px;
+}
+
 .experience h1 {
   font-size: 35px;
 }
 
 .for-courses {
-  background-color: rgb(25, 25, 70);
+  background-color: var(--bg-color);
   color: white;
 }
 .course-case {
@@ -344,8 +311,6 @@
 }
 
 .code-course {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -354,7 +319,6 @@
 }
 .code-course .master div {
   margin-top: 30px;
-  font-size: 20px;
 }
 
 .free-courses {
@@ -366,20 +330,7 @@
   color: rgb(253, 74, 134);
 }
 
-.free-courses a::after {
-  content: ">";
-  position: relative;
-  top: 2px;
-}
-
-.free-courses a:hover {
-  margin-right: 10px;
-  transition: 1s all;
-}
-
 .platform-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-bottom: 5rem;
 }
@@ -390,20 +341,8 @@
   background-color: var(--white-color);
   color: black;
   padding: 13px 0px 12px 20px;
-  border-radius: 20px;
 }
-.orange-card h4,
-.green-card h4,
-.purple-card h4,
-.orange-card div,
-.green-card div,
-.purple-card div,
-.orange-card span,
-.green-card span,
-.purple-card span {
-  padding-top: 20px;
-  font-size: 19px;
-}
+
 .fa-chart-simple {
   margin-left: 20px;
 }
@@ -421,9 +360,6 @@
   color: var(--white-color);
 }
 
-.our-solutions button {
-  font-size: 20px;
-}
 .collapsible {
   background-color: rgb(14, 14, 58);
   color: white;
@@ -476,7 +412,7 @@
 .plans-cards {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -490,18 +426,6 @@
   max-width: 300px;
 }
 
-.starter h1,
-.professional h1,
-.enterprise h1 {
-  font-size: 20px;
-}
-
-.starter div,
-.professional div,
-.enterprise div {
-  padding: 15px;
-}
-
 .price {
   font-size: 50px;
 }
@@ -513,7 +437,6 @@
   background-color: #ff335f;
   width: 140px;
   height: 50px;
-  border-radius: 20px;
   border: none;
 }
 
@@ -528,23 +451,15 @@
 }
 
 .contact-case {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   padding-top: 10rem;
   gap: 20px;
 }
 
-.ask-case p {
-  font-size: 20px;
-}
 .ask-case h1 {
   font-size: 50px;
 }
 
-.form-case {
-  border-radius: 30px;
-}
 .form-case div {
   padding-top: 1rem;
 }
@@ -585,7 +500,7 @@ select {
 }
 
 footer {
-  background-color: rgb(25, 25, 70);
+  background-color: var(--bg-color);
   padding-top: 5rem;
 }
 
@@ -594,7 +509,6 @@ footer {
   grid-template-columns: repeat(5, 200px);
   padding-bottom: 4rem;
   border-bottom: 1px solid rgb(96, 96, 143);
-
 }
 
 .footer-case h2 {
@@ -605,22 +519,11 @@ footer {
   color: rgb(96, 96, 143);
   padding: 5px;
   transition: 500ms color;
-  cursor: pointer;
-}
-.support,
-.community,
-.company,
-.industries ul li:hover {
-  color: rgb(210, 217, 221);
 }
 
 .news-input,
 .social-media {
   padding-top: 20px;
-}
-
-.social-media ul li {
-  padding: 10px;
 }
 
 .footer-end {
@@ -649,15 +552,14 @@ footer {
 }
 .newsletter input[type="text"] {
   background-color: rgb(43, 43, 110);
-  padding: 10px;
   border-radius: 10px;
   border: 1px solid rgb(60, 60, 134);
   outline: none;
+  width: 90%;
 }
 
 .footer-btn {
   width: 100px;
-  padding: 10px;
   border-radius: 10px;
   border: none;
   margin-top: 20px;
@@ -675,7 +577,7 @@ footer {
     height: 80px;
   }
   .skills-head ul li {
-    font-size: 7px;
+    font-size: 9px;
     margin-right: 7px;
   }
   .buttons {
@@ -702,7 +604,7 @@ footer {
   }
 
   .languages-logo ul {
-    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
   }
 
   .languages-logo ul li {
@@ -719,7 +621,6 @@ footer {
   #order-skill {
     order: 1;
   }
-
   .card,
   .popular,
   .customers,
@@ -727,9 +628,14 @@ footer {
   .upskill,
   .percentages,
   .code-course,
+  .contact-case,
   .platform-cards,
   .footer-case {
     grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .upskill-left h1 {
+    font-size: 30px;
   }
   .customers {
     padding: 20px;
@@ -830,9 +736,8 @@ footer {
     font-size: 20px;
   }
   .languages-logo ul {
-    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
   }
-
   .languages-logo ul li {
     margin: 33px 10px;
   }
@@ -944,7 +849,7 @@ footer {
     font-size: 20px;
   }
   .languages-logo ul {
-    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
   }
 
   .languages-logo ul li {
@@ -982,9 +887,8 @@ footer {
   }
 
   .plans-cards {
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(1, 300px);
   }
-
   .code-course {
     padding: 20px;
   }
@@ -1041,16 +945,15 @@ footer {
     font-size: x-small;
   }
 
-  
   .brands img {
     height: 30px;
   }
 
   .popular {
-    grid-template-columns: repeat(1,1fr);
-    padding: 20px ;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
   }
-  .languages-logo{
+  .languages-logo {
     padding-top: 10px;
   }
 
@@ -1059,7 +962,7 @@ footer {
   .upskill {
     grid-template-columns: repeat(2, 1fr);
   }
- 
+
   .footer-case,
   .platform-cards,
   .code-course,
@@ -1122,21 +1025,19 @@ footer {
     padding: 1rem;
   }
 
-  .languages-logo ul{
-    grid-template-columns: repeat(7,1fr);
-
+  .languages-logo ul {
+    flex-wrap: wrap;
   }
 
   .footer-case {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-@media (min-width:1200px) and (max-width:1400px) {
-    .platform-cards {
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .platform-cards {
     padding: 20px;
   }
-    .small-cards {
+  .small-cards {
     padding: 3rem;
   }
 }
