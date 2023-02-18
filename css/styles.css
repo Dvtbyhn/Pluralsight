@@ -642,7 +642,8 @@ footer {
     padding: 3rem;
   }
   .contact-case {
-    grid-template-columns: repeat(1, 340px);
+    grid-template-columns: repeat(1, 300px);
+    padding-top: 10px;
   }
 
   .plans-cards {
