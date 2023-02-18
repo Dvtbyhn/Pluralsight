@@ -47,7 +47,6 @@
 }
 .navbar-two img {
   height: 20px;
-  width: 70px;
 }
 .plural-head .link-bottom {
   text-decoration: none;
@@ -233,9 +232,6 @@
   padding: 50px;
 }
 
-.percentages {
-  padding: 50px;
-}
 
 .percentages img {
   width: 200px;
@@ -574,7 +570,7 @@ footer {
     margin-right: 5px;
   }
   .navbar-two {
-    height: 80px;
+  display: none;
   }
   .skills-head ul li {
     margin-right: 7px;
