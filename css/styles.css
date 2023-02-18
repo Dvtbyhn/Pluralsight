@@ -626,7 +626,6 @@ footer {
   .upskill,
   .percentages,
   .code-course,
-  .contact-case,
   .platform-cards,
   .footer-case {
     grid-template-columns: repeat(1, 1fr);
