@@ -567,9 +567,9 @@ footer {
   color: #f7f7f7;
 }
 @media (max-width: 576px) {
-  .navbar {
-    font-size: x-small;
-  }
+ .fix-header {
+  font-size: xx-small;
+ }
   .navbar ul li {
     margin-right: 5px;
   }
