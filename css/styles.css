@@ -642,7 +642,7 @@ footer {
     padding: 3rem;
   }
   .contact-case {
-    grid-template-columns: repeat(1, 420px);
+    grid-template-columns: repeat(1, 390px);
     padding-top: 10px;
   }
 
@@ -680,7 +680,7 @@ footer {
     width: 40%;
   }
   .ask-case h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .footer-end {
     display: grid;
@@ -767,7 +767,7 @@ footer {
     padding: 3rem;
   }
   .contact-case {
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: repeat(1, 440px);
   }
 
   .plans-cards {
