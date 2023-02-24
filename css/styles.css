@@ -537,7 +537,7 @@ footer {
     top: 60px;
     right: 0;
     background-color: var(--bg-color);
-    width: 40%;
+    width: 50%;
     transform: translateX(700px);
     padding: 30px 30px;
     transition: 0.5s transform ease-in-out;
@@ -548,7 +548,7 @@ footer {
   }
 
   .navbar ul.main-menu li {
-    padding: 10px;
+    padding: 20px;
     border-bottom: var(--white-color) solid 1px;
   }
   .navbar ul.main-menu li:last-child {
