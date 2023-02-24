@@ -45,9 +45,7 @@
 .navbar ul li {
   margin-right: 30px;
 }
-.navbar-two img {
-  height: 20px;
-}
+
 .plural-head .link-bottom {
   text-decoration: none;
   color: var(--white-color);
@@ -57,11 +55,6 @@
   border-bottom: 3px solid var(--tomato);
 }
 
-.navbar-two {
-  height: 100px;
-  background-color: var(--bg-color);
-  color: var(--white-color);
-}
 .menu-btn {
   position: absolute;
   top: 20px;
@@ -72,46 +65,9 @@
   position: fixed;
 }
 
-.skills-head {
-  padding-top: 20px;
-}
-.skills-head ul {
-  align-items: center;
-}
-
-.skills-head ul li {
-  margin-right: 59px;
-}
-
-.skills-head .buttons ul li {
-  margin-right: 10px;
-}
-.contact-btn {
-  width: 130px;
-  background-color: var(--bg-color);
-  border: 3px solid rgb(88, 88, 146);
-}
-
-.contact-btn:hover {
-  background-color: rgb(69, 69, 141);
-  transition: 700ms background-color;
-}
-
-.free-btn {
-  width: 150px;
-  background-color: rgb(221, 69, 69);
-  border: none;
-  color: var(--white-color);
-}
-
-.free-btn:hover {
-  background-color: rgb(207, 65, 65);
-  transition: 700ms background-color;
-}
-
 .where-teams {
   background-image: linear-gradient(to right, rgb(56, 2, 107), rgb(25, 25, 70));
-  padding-top: 12rem;
+  padding-top: 5rem;
 }
 
 .card {
@@ -578,24 +534,19 @@ footer {
   .navbar ul.main-menu {
     display: block;
     position: absolute;
-    top: 0;
+    top: 60px;
     right: 0;
     background-color: var(--bg-color);
-    width: 100%;
-  
-    transform: translateX(500px);
-    border-right: #ccc 1px solid;
-    opacity: 0.9;
-    padding: 30px;
-    transition: 0.5s transform;
+    width: 40%;
+    transform: translateX(700px);
+    padding: 30px 30px;
+    transition: 0.5s transform ease-in-out;
   }
 
   .navbar ul.main-menu.show {
     transform: translateX(45px);
   }
-  .fix-header {
-    font-size: xx-small;
-  }
+
   .navbar ul.main-menu li {
     padding: 10px;
     border-bottom: var(--white-color) solid 1px;
@@ -603,18 +554,8 @@ footer {
   .navbar ul.main-menu li:last-child {
     border-bottom: 0;
   }
-  .navbar-two {
-    display: none;
-  }
   .where-teams {
     padding-top: 6rem;
-  }
-  .skills-head ul li {
-    margin-right: 7px;
-  }
-
-  .skills-head {
-    align-items: center;
   }
 
   .popular {
@@ -696,9 +637,7 @@ footer {
     padding: 0;
   }
   .free-courses,
-  .free-btn {
-    display: block;
-  }
+ 
   .learn-btn {
     margin-top: 5px;
   }
@@ -738,20 +677,6 @@ footer {
   }
   .navbar ul li {
     margin-right: 5px;
-  }
-  .navbar-two {
-    height: 80px;
-  }
-  .skills-head ul li {
-    font-size: 7px;
-    margin-right: 7px;
-  }
-  .buttons {
-    display: none;
-  }
-
-  .skills-head {
-    align-items: center;
   }
 
   .where-teams {
@@ -855,20 +780,6 @@ footer {
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar ul li {
     margin-right: 9px;
-  }
-  .navbar-two {
-    height: 80px;
-  }
-  .skills-head ul li {
-    font-size: 12px;
-    margin-right: 15px;
-  }
-  .buttons {
-    display: none;
-  }
-
-  .skills-head {
-    align-items: center;
   }
 
   .where-teams {
@@ -979,19 +890,6 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-  .skills-head ul li {
-    font-size: 13px;
-  }
-
-  .contact-btn {
-    width: 100px;
-    font-size: x-small;
-  }
-  .free-btn {
-    width: 100px;
-    font-size: x-small;
-  }
-
   .brands img {
     height: 30px;
   }
@@ -1058,10 +956,6 @@ footer {
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .skills-head ul li {
-    margin-right: 30px;
-  }
-
   .platform-cards {
     padding: 20px;
   }
@@ -1080,11 +974,4 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .platform-cards {
-    padding: 20px;
-  }
-  .small-cards {
-    padding: 3rem;
-  }
-}
+
