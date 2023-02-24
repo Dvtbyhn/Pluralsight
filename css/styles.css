@@ -7,6 +7,7 @@
   --white-color: #fff;
   --tomato: #ff5733;
   --bg-color: #191946;
+  --pink:#ff335f;
 }
 
 .percentages,
@@ -46,7 +47,7 @@
   margin-right: 30px;
 }
 
-.plural-head .link-bottom {
+.navbar .link-bottom {
   text-decoration: none;
   color: var(--white-color);
 }
@@ -169,11 +170,16 @@
 .upskill-left h1 {
   font-size: 40px;
 }
-.browse-btn {
+.browse-btn,
+.contact-btn {
   width: 150px;
+  padding: 10px;
   background-color: var(--tomato);
   border: none;
   color: var(--white-color);
+}
+.contact-btn {
+  margin-top: 20px;
 }
 
 .learn-btn {
@@ -392,7 +398,7 @@
 .professional button,
 .enterprise button {
   color: var(--white-color);
-  background-color: #ff335f;
+  background-color:var(--pink);
   width: 140px;
   height: 50px;
   border: none;
@@ -400,7 +406,7 @@
 
 .professional a,
 .enterprise a {
-  color: #ff335f;
+  color: var(--pink);
 }
 
 .chat-case {
@@ -452,9 +458,6 @@ select {
 }
 .inputs a {
   color: var(--tomato);
-}
-.inputs button {
-  margin: 20px;
 }
 
 footer {
@@ -521,7 +524,7 @@ footer {
   border-radius: 10px;
   border: none;
   margin-top: 20px;
-  background-color: #ff335f;
+  background-color: var(--pink);
   color: #f7f7f7;
 }
 @media (max-width: 576px) {
@@ -540,7 +543,7 @@ footer {
     width: 50%;
     transform: translateX(700px);
     padding: 30px 30px;
-    transition: 0.5s transform ease-in-out;
+    transition: 300ms transform ease-in-out;
   }
 
   .navbar ul.main-menu.show {
@@ -637,7 +640,6 @@ footer {
     padding: 0;
   }
   .free-courses,
- 
   .learn-btn {
     margin-top: 5px;
   }
@@ -974,4 +976,3 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
